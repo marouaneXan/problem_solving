@@ -7,3 +7,7 @@
 const isVoyelLower=(c)=>{
     return (c=="a" || c=="e" || c=="i" || c=="u" || c=="y") ? true :false
 }
+//check if the caracter's upper
+const isVoyelUpper=(c)=>{
+    return (c=="A" || c=="E" || c=="I" || c=="U" || c=="Y") ? true :false
+}
