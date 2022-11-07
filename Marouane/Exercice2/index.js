@@ -21,3 +21,14 @@ const owerValue=(c)=>{
         case "y": return 5
     }
 }
+
+// return the value of all caracters upper
+const Upper=(c)=>{
+    switch(c){
+        case "A":return 2
+        case "E": return 4
+        case "I":return 6
+        case "U":return 8
+        case "Y":return 10
+    }
+}
