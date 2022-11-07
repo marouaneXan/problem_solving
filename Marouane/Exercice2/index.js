@@ -12,7 +12,7 @@ const isVoyelUpper=(c)=>{
     return (c=="A" || c=="E" || c=="I" || c=="U" || c=="Y") ? true :false
 }
 // return the value of all caracters lower
-const owerValue=(c)=>{
+const lowerValue=(c)=>{
     switch(c){
         case "a": return 1
         case "e": return 2
@@ -23,7 +23,7 @@ const owerValue=(c)=>{
 }
 
 // return the value of all caracters upper
-const Upper=(c)=>{
+const upperValue=(c)=>{
     switch(c){
         case "A":return 2
         case "E": return 4
@@ -37,9 +37,9 @@ let sum=0
 let s="aAeE"
 for(let i=0;i<s.length;i++){
     if(isVoyelLower(s[i])){
-        sum+=Lower(s[i])
+        sum+=lowerValue(s[i])
     }else if(isVoyelUpper(s[i])){
-        sum+=Upper(s[i])
+        sum+=upperValue(s[i])
     }else{
         console.log('Make sure the string has only voyals caracters')
     }
