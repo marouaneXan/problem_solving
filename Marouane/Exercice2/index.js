@@ -32,3 +32,17 @@ const Upper=(c)=>{
         case "Y":return 10
     }
 }
+
+let sum=0
+let s="aAeE"
+for(let i=0;i<s.length;i++){
+    if(isVoyelLower(s[i])){
+        sum+=Lower(s[i])
+    }else if(isVoyelUpper(s[i])){
+        sum+=Upper(s[i])
+    }else{
+        console.log('Make sure the string has only voyals caracters')
+    }
+}
+
+console.log(sum)
