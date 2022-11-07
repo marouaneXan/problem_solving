@@ -11,3 +11,13 @@ const isVoyelLower=(c)=>{
 const isVoyelUpper=(c)=>{
     return (c=="A" || c=="E" || c=="I" || c=="U" || c=="Y") ? true :false
 }
+// return the value of all caracters lower
+const owerValue=(c)=>{
+    switch(c){
+        case "a": return 1
+        case "e": return 2
+        case "i": return 3
+        case "u": return 4
+        case "y": return 5
+    }
+}
